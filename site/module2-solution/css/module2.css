@@ -1,0 +1,66 @@
+h1	{
+	color:hsla(217, 89%, 51%, 0.9);
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	/*margin:0px;*/
+	/*padding:0px;*/
+}
+body {
+	/*background-color: hsla(180, 70%, 53%, 0.17);*/
+}
+
+div.menuitem {
+	border: solid black 2px;
+	/*margin: 2px;*/
+	padding: 5px 10px 5px 10px;
+	float:left;
+	height: 150px;
+	overflow: hidden;
+	background-color: hsla(221, 74%, 3%, 0.16);
+	margin:10px;
+	/*width: 33.3%;*/
+}
+
+@media (min-width : 992px) {
+	.col-lg-3 {
+		width: calc(33.3% - 20px);
+	}
+}
+@media (min-width : 768px) and (max-width: 991px) {
+	.col-md-1 {
+		width: calc(100% - 20px);
+	}
+	.col-md-2 {
+		width: calc(50% - 20px);
+	}
+}
+
+@media (max-width : 767px) {
+	.col-sm-1 {
+		width: calc(100% - 20px);
+	}
+}
+
+div.menuitemname {
+	font-size: 150%;
+	background-color: hsla(221, 34%, 3%, 0.4);
+	text-align: center;
+	width: 20%;
+	float:right;
+	clear: left;
+	/*or*/
+	/*margin-left:80%;*/
+	/*or*/
+	/*position: relative;*/
+	/*top:0px;*/
+	/*left:1px;*/
+	overflow: hidden;
+}
+
+div > p {
+	clear: right;
+}
